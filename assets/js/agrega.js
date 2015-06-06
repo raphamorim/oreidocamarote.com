@@ -13,3 +13,7 @@ cheet('b a l a d a', function() {
 cheet('i d d q d', function () {
   alert('god mode enabled');
 });
+
+cheet('c h a m p a g n e', function() {
+  window.location = "http://www.louis-roederer.com/en/wine/cristal";
+});
