@@ -88,10 +88,14 @@ section header h1 {
 	color: #FFF;
 }
 
-/* draw any selected text yellow on red background */
-::-moz-selection { color: gold;  background: red; }
-::selection      { color: gold;  background: red; } 
+#player {
+	margin: 0 auto;
+	position: relative;
+	width: 820px;	
+}
 
-/* draw selected text in a paragraph white on black */
+::-moz-selection { color: gold;  background: black; }
+::selection      { color: gold;  background: black; } 
+
 p::-moz-selection { color: gold;  background: black; }
 p::selection      { color: gold;  background: black; }
