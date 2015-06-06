@@ -4,17 +4,6 @@ body {
 	font-family: helvetica, sans-serif;
 }
 
-section {
-	background: url(../images/background.jpg) no-repeat;
-	background-size: 1200px 630px;
-	width: 980px;
-	height: 630px;
-	margin: 0 auto;
-	margin-top: 70px;
-	box-shadow: 0 0 20px #000;
-	border-radius: 10px;
-}
-
 h1, h2 {
   margin-left: 50px;
 }
@@ -25,6 +14,17 @@ h1 {
 
 h2 {
   font-size: 30px;
+}
+
+section {
+	background: url(../images/background.jpg) no-repeat;
+	background-size: 1200px 630px;
+	width: 980px;
+	height: 630px;
+	margin: 0 auto;
+	margin-top: 70px;
+	box-shadow: 0 0 20px #000;
+	border-radius: 10px;
 }
 
 section header {
@@ -75,6 +75,23 @@ section header h1 {
 }
 
 #lorem {
-	padding: 40px;
+	display: none;
+	padding: 0px 40px;
 	text-align: justify;
+	overflow: scroll;
+	height: 400px;
+	margin-top: 40px;
+	background: rgba(0,0,0,.6);
+	text-shadow: 0 0 5px #000;
+	font-size: 18px;
+	letter-spacing: 0.09;
+	color: #FFF;
 }
+
+/* draw any selected text yellow on red background */
+::-moz-selection { color: gold;  background: red; }
+::selection      { color: gold;  background: red; } 
+
+/* draw selected text in a paragraph white on black */
+p::-moz-selection { color: gold;  background: black; }
+p::selection      { color: gold;  background: black; }
